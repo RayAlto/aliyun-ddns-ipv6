@@ -4,7 +4,7 @@
 
 ## 1. 部署域名和管理账号
 
-去![这里](https://dc.console.aliyun.com/next/index#/domain/list/all-domain)登陆后确认好你要使用的二级域名，然后去![这里](https://ram.console.aliyun.com/manage/ak)整一个AccessKey，确保有管理云解析的权限，然后去![这里](https://next.api.aliyun.com/api/Alidns/2015-01-09/DescribeSubDomainRecords?tab=DEBUG)填好你的信息拿到`RecordId`。
+去[这里](https://dc.console.aliyun.com/next/index#/domain/list/all-domain)登陆后确认好你要使用的二级域名，然后去[这里](https://ram.console.aliyun.com/manage/ak)整一个AccessKey，确保有管理云解析的权限，然后去[这里](https://next.api.aliyun.com/api/Alidns/2015-01-09/DescribeSubDomainRecords?tab=DEBUG)填好你的信息拿到`RecordId`。
 
 ## 2. 填写配置文件
 
