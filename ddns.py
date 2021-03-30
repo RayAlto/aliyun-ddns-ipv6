@@ -85,7 +85,7 @@ def update_record(alisdk_client: AcsClient, record_id: str, resource_record: str
 def get_current_dns_record(alisdk_client: AcsClient, subdomain: str) -> str:
     subdomain_records_request = DescribeSubDomainRecordsRequest()
     subdomain_records_request.set_accept_format('json')
-    subdomain_records_request.set_SubDomain('ipv6.rayalto.top')
+    subdomain_records_request.set_SubDomain(subdomain)
 
     subdomain_records_response = alisdk_client.do_action_with_exception(subdomain_records_request)
     subdomain_records_response_json = json.loads(subdomain_records_response)
