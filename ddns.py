@@ -107,5 +107,5 @@ try:
     else:
         print_log('(main) -> No change, exit...')
 except Exception as e:
-    print_log('Failed: {e}')
+    print_log(f'Failed: {e}')
     send_server_chan(user_config['ServerChanKey'], '树莓派IPv6更新失败', f'更新IPV6时出现错误: {e}')
